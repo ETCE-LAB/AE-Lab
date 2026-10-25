@@ -127,6 +127,22 @@ source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 ```
+### 3. Optional: Get existing data
+
+Download the existing dataset here:
+https://doi.org/10.25625/S6FHPE
+
+Create a new folder at root level in this project
+```bash
+mkdir data
+```
+
+Extract all .zip files into this folder.
+
+The metadata.db references the measurements by their filename. 
+Place the metadata.db at root level in this project.
+
+If existing apps are running, restart them to refresh the connection. 
 
 ---
 
@@ -181,6 +197,7 @@ python model_training/deep_learning/compare_models.py
 ```text
 AE-Lab/
 ├── .documentation/              # Visual assets, hardware setup diagrams, and schematics
+├── data/                        # Raw Spectrum and Frequency data files
 ├── data_collection/             # Real-time PicoScope interface, streamer & acquisition UI
 │   ├── data_collection.py       # Streamlit acquisition dashboard
 │   ├── picoscope_measure.py     # Hardware controller & oscilloscope trigger loops
