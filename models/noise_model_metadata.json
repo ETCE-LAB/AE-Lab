@@ -1,0 +1,42 @@
+{
+  "model_type": "Random Forest",
+  "training_date": "2026-10-04T11:57:42.946046",
+  "n_classes": 2,
+  "classes": [
+    "noise",
+    "signal"
+  ],
+  "n_features": 10,
+  "top_features": [
+    "duration",
+    "dominant_frequency",
+    "spec_rel_energy_0.1_0.2",
+    "wf_crest_factor",
+    "wf_zcr",
+    "wf_impulse_factor",
+    "wf_margin_factor",
+    "wf_kurtosis",
+    "wf_high_amp_counts",
+    "wf_build_up_energy_ratio"
+  ],
+  "test_accuracy": 0.996086508753862,
+  "test_f1": 0.9961473231479007,
+  "test_f2_signal": 0.9864672364672364,
+  "test_precision": 0.9963377125838507,
+  "test_recall": 0.996086508753862,
+  "confusion_matrix": [
+    [
+      4559,
+      19
+    ],
+    [
+      0,
+      277
+    ]
+  ],
+  "training_samples": 6648,
+  "class_distribution": {
+    "noise": 5540,
+    "signal": 1108
+  }
+}

@@ -1,0 +1,22 @@
+[
+  "wf_hjorth_mobility",
+  "wf_hjorth_complexity",
+  "spec_rel_energy_0.0_0.1",
+  "spec_rel_energy_0.2_0.3",
+  "spec_rel_energy_0.4_0.5",
+  "spec_peak_mag_0.7_1.0",
+  "spec_mean_mag_0.7_1.0",
+  "wf_rise_time",
+  "spec_centroid",
+  "spec_rel_energy_0.5_0.6",
+  "spec_rel_energy_0.9_1.0",
+  "spec_mean_mag_0.0_0.1",
+  "spec_mean_mag_0.2_0.3",
+  "duration",
+  "dominant_frequency",
+  "spec_rel_energy_0.3_0.4",
+  "spec_skewness",
+  "spec_rolloff",
+  "spec_entropy",
+  "spec_flatness"
+]

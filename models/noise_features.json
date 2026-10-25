@@ -1,0 +1,12 @@
+[
+  "duration",
+  "dominant_frequency",
+  "spec_rel_energy_0.1_0.2",
+  "wf_crest_factor",
+  "wf_zcr",
+  "wf_impulse_factor",
+  "wf_margin_factor",
+  "wf_kurtosis",
+  "wf_high_amp_counts",
+  "wf_build_up_energy_ratio"
+]

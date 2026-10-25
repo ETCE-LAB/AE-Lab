@@ -1,0 +1,267 @@
+{
+  "task": "plant",
+  "basis": {
+    "protocol": "Leave-One-Plant-Out, exact classical folds",
+    "eval_plants": 13,
+    "total_events_in_pool": 1385,
+    "train_samples_per_fold": [
+      335,
+      356,
+      392,
+      424,
+      425,
+      429,
+      434,
+      440
+    ],
+    "test_events": 575,
+    "test_support": {
+      "Mini Pepper": 195,
+      "Sunflower": 248,
+      "Tomato": 132
+    },
+    "majority_baseline": 0.43130434782608695,
+    "epochs": 10,
+    "seeds": 3,
+    "matches_classical_metadata": true
+  },
+  "models": {
+    "Classical XGBoost (65 features + UMAP)": {
+      "single_run": {
+        "accuracy": 0.15304347826086956,
+        "balanced_accuracy": 0.16181229165100133,
+        "macro_f1": 0.14524048200788953,
+        "mean_per_plant_accuracy": 0.23927271174302664,
+        "source": "models/plant_model_metadata.json (original LOPO run)"
+      }
+    },
+    "1D-CNN (raw waveform)": {
+      "runs": [
+        {
+          "accuracy": 0.11826086956521739,
+          "balanced_accuracy": 0.11614156452866131,
+          "macro_f1": 0.12247959481121164,
+          "mean_per_plant_accuracy": 0.25713749925288387,
+          "n_test": 575,
+          "confusion_matrix": [
+            [
+              16,
+              9,
+              170
+            ],
+            [
+              61,
+              36,
+              151
+            ],
+            [
+              47,
+              69,
+              16
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.22956521739130434,
+          "balanced_accuracy": 0.2891188560543399,
+          "macro_f1": 0.27083370880639035,
+          "mean_per_plant_accuracy": 0.34743297802409834,
+          "n_test": 575,
+          "confusion_matrix": [
+            [
+              18,
+              149,
+              28
+            ],
+            [
+              182,
+              25,
+              41
+            ],
+            [
+              6,
+              37,
+              89
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.18608695652173912,
+          "balanced_accuracy": 0.2016824573276186,
+          "macro_f1": 0.1964797796599825,
+          "mean_per_plant_accuracy": 0.36294318928934316,
+          "n_test": 575,
+          "confusion_matrix": [
+            [
+              42,
+              118,
+              35
+            ],
+            [
+              56,
+              29,
+              163
+            ],
+            [
+              18,
+              78,
+              36
+            ]
+          ]
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.17797101449275363,
+          "std": 0.0458007703538636,
+          "values": [
+            0.11826086956521739,
+            0.22956521739130434,
+            0.18608695652173912
+          ]
+        },
+        "balanced_accuracy": {
+          "mean": 0.20231429263687328,
+          "std": 0.07061909684017685,
+          "values": [
+            0.11614156452866131,
+            0.2891188560543399,
+            0.2016824573276186
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.1965976944258615,
+          "std": 0.060565370813926496,
+          "values": [
+            0.12247959481121164,
+            0.27083370880639035,
+            0.1964797796599825
+          ]
+        },
+        "mean_per_plant_accuracy": {
+          "mean": 0.32250455552210844,
+          "std": 0.046653193512349624,
+          "values": [
+            0.25713749925288387,
+            0.34743297802409834,
+            0.36294318928934316
+          ]
+        }
+      }
+    },
+    "2D-CNN (CWT scalogram)": {
+      "runs": [
+        {
+          "accuracy": 0.0782608695652174,
+          "balanced_accuracy": 0.09121863799283154,
+          "macro_f1": 0.07885842150243311,
+          "mean_per_plant_accuracy": 0.24298712473209116,
+          "n_test": 575,
+          "confusion_matrix": [
+            [
+              13,
+              29,
+              153
+            ],
+            [
+              175,
+              10,
+              63
+            ],
+            [
+              16,
+              94,
+              22
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.32,
+          "balanced_accuracy": 0.3962973406521793,
+          "macro_f1": 0.2932862083944536,
+          "mean_per_plant_accuracy": 0.5066239316239316,
+          "n_test": 575,
+          "confusion_matrix": [
+            [
+              36,
+              8,
+              151
+            ],
+            [
+              83,
+              33,
+              132
+            ],
+            [
+              17,
+              0,
+              115
+            ]
+          ]
+        },
+        {
+          "accuracy": 0.2,
+          "balanced_accuracy": 0.2450691781336943,
+          "macro_f1": 0.16855511638120335,
+          "mean_per_plant_accuracy": 0.22503909215318615,
+          "n_test": 575,
+          "confusion_matrix": [
+            [
+              2,
+              20,
+              173
+            ],
+            [
+              40,
+              37,
+              171
+            ],
+            [
+              16,
+              40,
+              76
+            ]
+          ]
+        }
+      ],
+      "summary": {
+        "accuracy": {
+          "mean": 0.19942028985507246,
+          "std": 0.098690438049929,
+          "values": [
+            0.0782608695652174,
+            0.32,
+            0.2
+          ]
+        },
+        "balanced_accuracy": {
+          "mean": 0.2441950522595684,
+          "std": 0.12454939254799158,
+          "values": [
+            0.09121863799283154,
+            0.3962973406521793,
+            0.2450691781336943
+          ]
+        },
+        "macro_f1": {
+          "mean": 0.18023324875936333,
+          "std": 0.08792839143202005,
+          "values": [
+            0.07885842150243311,
+            0.2932862083944536,
+            0.16855511638120335
+          ]
+        },
+        "mean_per_plant_accuracy": {
+          "mean": 0.324883382836403,
+          "std": 0.1287186939895352,
+          "values": [
+            0.24298712473209116,
+            0.5066239316239316,
+            0.22503909215318615
+          ]
+        }
+      }
+    }
+  }
+}

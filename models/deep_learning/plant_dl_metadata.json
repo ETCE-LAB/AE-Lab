@@ -1,0 +1,466 @@
+{
+  "1D-CNN (Raw Waveform)": {
+    "accuracy": 0.23716558206796817,
+    "balanced_accuracy": 0.19517853894737056,
+    "mean_per_plant_accuracy": 0.30224968071494385,
+    "macro_precision": 0.282636684303351,
+    "macro_recall": 0.19517853894737056,
+    "macro_f1": 0.19430972394080714,
+    "majority_baseline": 0.7187274041937817,
+    "per_plant": [
+      {
+        "plant_id": "1",
+        "species": "Sunflower",
+        "n_events": 26,
+        "accuracy": 0.34615384615384615,
+        "predicted_as": {
+          "Mini Pepper": 6,
+          "Sunflower": 9,
+          "Tomato": 11
+        }
+      },
+      {
+        "plant_id": "10",
+        "species": "Mini Pepper",
+        "n_events": 5,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 0,
+          "Tomato": 5
+        }
+      },
+      {
+        "plant_id": "11",
+        "species": "Mini Pepper",
+        "n_events": 7,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 7,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "12",
+        "species": "Mini Pepper",
+        "n_events": 33,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 1,
+          "Tomato": 32
+        }
+      },
+      {
+        "plant_id": "13",
+        "species": "Sunflower",
+        "n_events": 63,
+        "accuracy": 0.06349206349206349,
+        "predicted_as": {
+          "Mini Pepper": 52,
+          "Sunflower": 4,
+          "Tomato": 7
+        }
+      },
+      {
+        "plant_id": "2",
+        "species": "Sunflower",
+        "n_events": 3,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 2,
+          "Sunflower": 0,
+          "Tomato": 1
+        }
+      },
+      {
+        "plant_id": "20",
+        "species": "Tomato",
+        "n_events": 84,
+        "accuracy": 0.047619047619047616,
+        "predicted_as": {
+          "Mini Pepper": 35,
+          "Sunflower": 45,
+          "Tomato": 4
+        }
+      },
+      {
+        "plant_id": "21",
+        "species": "Tomato",
+        "n_events": 6,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 6,
+          "Sunflower": 0,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "3",
+        "species": "Tomato",
+        "n_events": 11,
+        "accuracy": 0.45454545454545453,
+        "predicted_as": {
+          "Mini Pepper": 5,
+          "Sunflower": 1,
+          "Tomato": 5
+        }
+      },
+      {
+        "plant_id": "4",
+        "species": "Tomato",
+        "n_events": 3,
+        "accuracy": 0.3333333333333333,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 2,
+          "Tomato": 1
+        }
+      },
+      {
+        "plant_id": "40",
+        "species": "Sunflower",
+        "n_events": 149,
+        "accuracy": 0.1610738255033557,
+        "predicted_as": {
+          "Mini Pepper": 1,
+          "Sunflower": 24,
+          "Tomato": 124
+        }
+      },
+      {
+        "plant_id": "41",
+        "species": "Tomato",
+        "n_events": 15,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 3,
+          "Sunflower": 12,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "42",
+        "species": "Mini Pepper",
+        "n_events": 949,
+        "accuracy": 0.27713382507903056,
+        "predicted_as": {
+          "Mini Pepper": 263,
+          "Sunflower": 686,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "5",
+        "species": "Tomato",
+        "n_events": 14,
+        "accuracy": 0.35714285714285715,
+        "predicted_as": {
+          "Mini Pepper": 4,
+          "Sunflower": 5,
+          "Tomato": 5
+        }
+      },
+      {
+        "plant_id": "6",
+        "species": "Tomato",
+        "n_events": 1,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 0,
+          "Tomato": 1
+        }
+      },
+      {
+        "plant_id": "7",
+        "species": "Tomato",
+        "n_events": 2,
+        "accuracy": 0.5,
+        "predicted_as": {
+          "Mini Pepper": 1,
+          "Sunflower": 0,
+          "Tomato": 1
+        }
+      },
+      {
+        "plant_id": "8",
+        "species": "Tomato",
+        "n_events": 2,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 0,
+          "Tomato": 2
+        }
+      },
+      {
+        "plant_id": "9",
+        "species": "Sunflower",
+        "n_events": 10,
+        "accuracy": 0.9,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 9,
+          "Tomato": 1
+        }
+      }
+    ],
+    "confusion_matrix": [
+      [
+        263,
+        694,
+        37
+      ],
+      [
+        61,
+        46,
+        144
+      ],
+      [
+        54,
+        65,
+        19
+      ]
+    ],
+    "classes": [
+      "Mini Pepper",
+      "Sunflower",
+      "Tomato"
+    ],
+    "total_test_events": 1383
+  },
+  "2D-CNN (CWT Scalogram)": {
+    "accuracy": 0.11062906724511931,
+    "balanced_accuracy": 0.16158962745427663,
+    "mean_per_plant_accuracy": 0.3927665920954511,
+    "macro_precision": 0.20625816714534004,
+    "macro_recall": 0.16158962745427663,
+    "macro_f1": 0.07968522385262652,
+    "majority_baseline": 0.7187274041937817,
+    "per_plant": [
+      {
+        "plant_id": "1",
+        "species": "Sunflower",
+        "n_events": 26,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 26,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "10",
+        "species": "Mini Pepper",
+        "n_events": 5,
+        "accuracy": 0.6,
+        "predicted_as": {
+          "Mini Pepper": 3,
+          "Sunflower": 0,
+          "Tomato": 2
+        }
+      },
+      {
+        "plant_id": "11",
+        "species": "Mini Pepper",
+        "n_events": 7,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 7,
+          "Sunflower": 0,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "12",
+        "species": "Mini Pepper",
+        "n_events": 33,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 33,
+          "Sunflower": 0,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "13",
+        "species": "Sunflower",
+        "n_events": 63,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 0,
+          "Tomato": 63
+        }
+      },
+      {
+        "plant_id": "2",
+        "species": "Sunflower",
+        "n_events": 3,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 3,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "20",
+        "species": "Tomato",
+        "n_events": 84,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 84,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "21",
+        "species": "Tomato",
+        "n_events": 6,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 3,
+          "Sunflower": 3,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "3",
+        "species": "Tomato",
+        "n_events": 11,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 11,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "4",
+        "species": "Tomato",
+        "n_events": 3,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 3,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "40",
+        "species": "Sunflower",
+        "n_events": 149,
+        "accuracy": 0.4697986577181208,
+        "predicted_as": {
+          "Mini Pepper": 37,
+          "Sunflower": 70,
+          "Tomato": 42
+        }
+      },
+      {
+        "plant_id": "41",
+        "species": "Tomato",
+        "n_events": 15,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 15,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "42",
+        "species": "Mini Pepper",
+        "n_events": 949,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 949,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "5",
+        "species": "Tomato",
+        "n_events": 14,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 14,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "6",
+        "species": "Tomato",
+        "n_events": 1,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 0,
+          "Tomato": 1
+        }
+      },
+      {
+        "plant_id": "7",
+        "species": "Tomato",
+        "n_events": 2,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 2,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "8",
+        "species": "Tomato",
+        "n_events": 2,
+        "accuracy": 0.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 2,
+          "Tomato": 0
+        }
+      },
+      {
+        "plant_id": "9",
+        "species": "Sunflower",
+        "n_events": 10,
+        "accuracy": 1.0,
+        "predicted_as": {
+          "Mini Pepper": 0,
+          "Sunflower": 10,
+          "Tomato": 0
+        }
+      }
+    ],
+    "confusion_matrix": [
+      [
+        43,
+        949,
+        2
+      ],
+      [
+        37,
+        109,
+        105
+      ],
+      [
+        3,
+        134,
+        1
+      ]
+    ],
+    "classes": [
+      "Mini Pepper",
+      "Sunflower",
+      "Tomato"
+    ],
+    "total_test_events": 1383
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "1D-CNN (Raw Waveform)": {
+    "mean_fold_balanced_accuracy": 0.43472612436233654,
+    "balanced_accuracy": 0.7495072712682838,
+    "accuracy": 0.8741865509761388,
+    "precision": 0.7983938177134631,
+    "recall": 0.7495072712682838,
+    "macro_f1": 0.7699248896673576,
+    "confusion_matrix": [
+      [
+        1070,
+        62
+      ],
+      [
+        112,
+        139
+      ]
+    ],
+    "class_names": [
+      "cut",
+      "drought"
+    ],
+    "total_test_samples": 1383
+  },
+  "2D-CNN (CWT Scalogram)": {
+    "mean_fold_balanced_accuracy": 0.5166666666666667,
+    "balanced_accuracy": 0.8366797826362395,
+    "accuracy": 0.925524222704266,
+    "precision": 0.9009921949011159,
+    "recall": 0.8366797826362395,
+    "macro_f1": 0.8640480096660683,
+    "confusion_matrix": [
+      [
+        1105,
+        27
+      ],
+      [
+        76,
+        175
+      ]
+    ],
+    "class_names": [
+      "cut",
+      "drought"
+    ],
+    "total_test_samples": 1383
+  }
+}

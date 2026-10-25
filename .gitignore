@@ -1,0 +1,39 @@
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Python cache / compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+
+# Temporary application state files
+stop_measurement.flag
+*.log
+
+# IDEs / Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS / System files
+.DS_Store
+Thumbs.db
+metadata.db-shm
+metadata.db-wal
+
+# Large Data & Cache Files
+data/
+data_zips/
+metadata.db
+metadata-old*.db
+*.npz
+data_collection/*.npz
+
+# Scratch / Temporary debugging directory
+scratch/

@@ -1,0 +1,38 @@
+{
+  "1D-CNN (Raw Waveform)": {
+    "accuracy": 0.9943342776203966,
+    "precision": 0.9944229935580131,
+    "recall": 0.9943342776203966,
+    "f1_score": 0.9943441119424988,
+    "f2_signal": 0.9968286002594782,
+    "confusion_matrix": [
+      [
+        2478,
+        22
+      ],
+      [
+        0,
+        1383
+      ]
+    ],
+    "total_test_samples": 3883
+  },
+  "2D-CNN (CWT Scalogram)": {
+    "accuracy": 0.9801699716713881,
+    "precision": 0.9812158019325546,
+    "recall": 0.9801699716713881,
+    "f1_score": 0.9802834311291377,
+    "f2_signal": 0.988987414187643,
+    "confusion_matrix": [
+      [
+        2423,
+        77
+      ],
+      [
+        0,
+        1383
+      ]
+    ],
+    "total_test_samples": 3883
+  }
+}

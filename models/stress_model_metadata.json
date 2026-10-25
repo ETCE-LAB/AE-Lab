@@ -1,0 +1,27 @@
+{
+  "model_type": "SVM (RBF)",
+  "training_date": "2026-08-30T13:53:21.537581",
+  "classes": [
+    "cut",
+    "drought"
+  ],
+  "test_accuracy": 0.54,
+  "test_f1": 0.6688,
+  "test_precision": 0.9261835748792271,
+  "test_recall": 0.54,
+  "confusion_matrix": [
+    [
+      1,
+      1
+    ],
+    [
+      22,
+      26
+    ]
+  ],
+  "training_samples": 196,
+  "class_distribution": {
+    "cut": 98,
+    "drought": 98
+  }
+}

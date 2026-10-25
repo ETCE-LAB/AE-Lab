@@ -1,0 +1,27 @@
+# Web UI & Visualization
+streamlit
+plotly
+matplotlib
+Pillow
+
+# Data Processing & Numerical Computing
+pandas
+numpy
+scipy
+requests
+
+# Hardware Interface (PicoScope)
+picosdk
+
+# Classical Machine Learning & Dimensionality Reduction
+scikit-learn
+joblib
+imbalanced-learn
+xgboost
+optuna
+umap-learn
+hdbscan
+
+# Deep Learning & Wavelet Signal Processing
+torch
+PyWavelets

@@ -1,0 +1,8 @@
+{
+    "N_SAMPLES": 12500, 
+    "TIMEBASE": 5, 
+    "TRIGGER_MV": 20.0, 
+    "CH_RANGE": 6, 
+    "PRE_TRIGGER_PCT": 40.0, 
+    "MIN_FREQUENCY_KHZ": 30.0
+}
